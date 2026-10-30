@@ -1,0 +1,15 @@
+# Roblox Studio place and model files
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# Generated Rojo sourcemap
+sourcemap.json
+
+# Node.js dependencies, if tooling is added later
+node_modules/
+
+# Operating system files
+.DS_Store
+Thumbs.db
