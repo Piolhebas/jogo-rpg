@@ -1,1 +1,543 @@
+# BÍBLIA DE DESENVOLVIMENTO
+## Projeto RPG — Versão 1.0
 
+**Documento central de planejamento, design e desenvolvimento**
+
+**Status:** Fundação do projeto aprovada  
+**Plataforma:** Roblox  
+**Tecnologia:** Roblox Studio / Luau  
+**Arquitetura:** Experiência multiplayer expansível
+
+---
+
+# 1. VISÃO DO PROJETO
+
+Criar um RPG original de exploração, captura, coleção, evolução e treinamento de criaturas, ambientado em um universo próprio.
+
+O jogador será simultaneamente aventureiro, pesquisador e treinador.
+
+A experiência deverá oferecer:
+- Exploração de regiões distintas.
+- Descoberta de espécies.
+- Captura e treinamento.
+- Combates estratégicos por turnos.
+- Evolução e vínculo entre jogador e criatura.
+- Reprodução e pesquisa genética.
+- Interação multiplayer.
+- Atividades cooperativas.
+- Progressão narrativa e exploração de mistérios.
+
+O projeto deverá ser expansível, permitindo adicionar espécies, regiões, histórias, atividades e sistemas sem reconstruir sua fundação.
+
+# 2. DIREÇÃO ARTÍSTICA
+
+**Estilo oficial:** 3D realista estilizado.
+
+Características:
+- Anatomia e materiais convincentes.
+- Criaturas carismáticas e reconhecíveis.
+- Ambientes ricos em detalhes.
+- Iluminação de qualidade.
+- Animações naturais.
+- Silhuetas distintas.
+- Otimização para diferentes dispositivos.
+
+As criaturas poderão apresentar variações de aparência conforme espécie, personalidade, raridade e hereditariedade.
+
+# 3. MUNDO E NARRATIVA
+
+O universo será completamente original.
+
+O mundo será composto por regiões independentes, conectadas por viagens e portais.
+
+O fenômeno ancestral provisoriamente chamado **O Primeiro Pulso** será um dos mistérios centrais da narrativa.
+
+Categorias de criaturas:
+- Naturais.
+- Ancestrais.
+- Misteriosas.
+
+A história terá aventura, mistério, emoção, exploração e batalhas.
+
+O jogador terá uma progressão individual, mesmo compartilhando o mundo com outros jogadores.
+
+# 4. PRAÇA CENTRAL
+
+A Praça Central será o coração da comunidade.
+
+Será uma área compartilhada, onde todos os jogadores poderão encontrar outros aventureiros e acessar as principais estruturas.
+
+Estruturas planejadas:
+
+1. Praça principal e fonte central.
+2. Centro de pesquisa genética e reprodução.
+3. Centro de recuperação de criaturas.
+4. Área comercial.
+5. Centro de expedições e missões.
+6. Área de portais.
+7. Espaços sociais e eventos.
+8. Áreas reservadas para futuras funcionalidades.
+
+A praça deverá ser visualmente marcante, funcional e expansível.
+
+# 5. SISTEMA DE CRIATURAS
+
+Cada espécie terá:
+- Identificador único.
+- Nome e número de enciclopédia.
+- Modelo 3D.
+- Família anatômica.
+- Elementos.
+- Atributos.
+- Habilidades.
+- Raridade.
+- Habitat.
+- Personalidade.
+- Evoluções.
+- Sons.
+- Animações.
+- Comportamentos.
+
+Atributos principais:
+- HP.
+- Ataque físico.
+- Defesa física.
+- Ataque especial.
+- Defesa especial.
+- Velocidade.
+- Energia.
+
+Cada indivíduo também terá identificador próprio, experiência, vínculo e características individuais.
+
+# 6. SISTEMA ELEMENTAL
+
+Elementos aprovados:
+
+1. Natureza.
+2. Fogo.
+3. Água.
+4. Elétrico.
+5. Terra.
+6. Ar.
+7. Gelo.
+8. Pedra.
+9. Veneno.
+10. Luz.
+11. Sombrio.
+12. Arcano.
+
+Cada criatura terá um elemento principal.
+
+Um segundo elemento poderá surgir por herança genética, quando a combinação for compatível.
+
+O sistema de vantagens será estratégico e equilibrado.
+
+Multiplicadores inicialmente propostos:
+- Vantagem: 1,5x.
+- Resistência: 0,75x.
+- Neutro: 1,0x.
+
+A tabela elemental detalhada ainda deverá passar por balanceamento e aprovação.
+
+Imunidades serão raras e precisarão de justificativa de gameplay.
+
+# 7. EXPLORAÇÃO E ENCONTROS
+
+As criaturas poderão:
+- Caminhar naturalmente pelos habitats.
+- Descansar.
+- Alimentar-se.
+- Interagir entre si.
+- Fugir de ameaças.
+- Defender território.
+- Aparecer em condições especiais.
+
+Tipos de encontros:
+- Selvagens.
+- Raros.
+- Especiais.
+- Ancestrais restaurados.
+- Chefes.
+- Espécies ligadas à narrativa.
+
+Pistas ambientais poderão revelar criaturas escondidas, incluindo pegadas, ninhos, sons e rastros.
+
+# 8. CAPTURA
+
+Sistema híbrido aprovado:
+
+**Captura direta:** aproximação, observação, alimentação e utilização do dispositivo.
+
+**Captura por batalha:** enfraquecimento, aplicação de condições e tentativa de captura.
+
+**Captura especial:** investigação ambiental, itens e desafios específicos.
+
+O cálculo será controlado pelo servidor, considerando HP, raridade, personalidade, condições, dispositivo e modificadores.
+
+O Dispositivo de Vínculo será o equipamento oficial de captura, com modelos evolutivos e efeitos próprios.
+
+# 9. COMPANHEIROS SEGUIDORES
+
+Uma criatura poderá acompanhar o jogador pelo mundo.
+
+Comportamentos:
+- Seguir o jogador.
+- Caminhar e correr naturalmente.
+- Parar quando o jogador parar.
+- Reagir aos movimentos.
+- Evitar obstáculos.
+- Recuperar distância quando necessário.
+- Demonstrar personalidade.
+
+Distâncias configuráveis:
+- Próximo.
+- Normal.
+- Distante.
+
+O jogador poderá guardar o companheiro.
+
+Interações:
+- Carinho.
+- Alimentação.
+- Brincadeiras.
+- Chamadas.
+- Fotografias.
+- Observação de reações.
+
+A biblioteca de animações será organizada por famílias anatômicas, com animações exclusivas quando necessário.
+
+# 10. PERSONALIDADE E VÍNCULO
+
+Personalidade representa características individuais e comportamentais.
+
+Vínculo representa a relação entre treinador e criatura.
+
+O vínculo poderá aumentar por:
+- Batalhas.
+- Exploração.
+- Vitórias.
+- Missões.
+- Interações.
+- Cuidados e atividades compartilhadas.
+
+O vínculo poderá desbloquear:
+- Evoluções especiais.
+- Habilidades.
+- Animações.
+- Interações.
+- Reações ambientais.
+- Pequenos benefícios de combate.
+
+Não haverá perda automática de vínculo por ausência do jogador.
+
+# 11. COMBATE
+
+Sistema de batalhas por turnos.
+
+Câmera híbrida:
+- Visão estratégica durante decisões.
+- Câmera cinematográfica durante ataques.
+
+Formatos:
+- 1 contra 1.
+- 2 contra 2.
+- Desafios especiais.
+- Chefes cooperativos.
+
+Cada treinador poderá ter até seis criaturas na equipe.
+
+As ações serão selecionadas pelos participantes e executadas pelo servidor.
+
+Ações disponíveis:
+- Ataque.
+- Troca.
+- Item.
+- Defesa.
+- Captura, quando permitida.
+- Fuga, quando permitida.
+- Concentração para recuperação de energia.
+
+Chefes poderão ter fases, padrões de ataque e mecânicas cooperativas.
+
+# 12. ENERGIA E HABILIDADES
+
+Cada criatura terá uma reserva individual de energia.
+
+A capacidade será definida por:
+- Espécie.
+- Nível.
+- Evolução.
+- Características individuais.
+
+A energia será independente do HP e não será compartilhada entre criaturas da equipe.
+
+Regras:
+- Trocar de criatura não recupera energia.
+- Derrota não restaura energia automaticamente.
+- A energia permanece entre batalhas.
+- Recuperação fora de combate por itens e pontos de descanso.
+- Valores de recuperação parcial ainda sujeitos a testes.
+
+Custos de habilidades serão proporcionais à capacidade máxima de energia.
+
+# 13. EFEITOS DE STATUS
+
+Sete efeitos aprovados:
+
+1. Queimadura: dano gradual e redução de força física.
+2. Envenenamento: dano gradual.
+3. Paralisia: possibilidade de impedir a ação.
+4. Congelamento: pode impedir ações temporariamente.
+5. Lentidão: redução de velocidade.
+6. Confusão: pode atrapalhar a execução das ações.
+7. Exaustão: redução da recuperação de energia.
+
+Cada efeito terá duração, intensidade, regras de resistência e formas de tratamento.
+
+# 14. REPRODUÇÃO E GENÉTICA
+
+Sistema completo de reprodução aprovado.
+
+Criaturas compatíveis poderão gerar descendentes.
+
+A herança poderá influenciar:
+- Espécie.
+- Elementos.
+- Habilidades.
+- Atributos.
+- Personalidade.
+- Aparência.
+- Características especiais.
+
+Cada criatura terá identidade própria e histórico genealógico.
+
+O sistema deverá respeitar compatibilidade genética entre espécies e equilíbrio de raridade.
+
+# 15. LABORATÓRIO CENTRAL
+
+O laboratório será uma única estrutura física na Praça Central, compartilhada por todos os jogadores.
+
+Áreas:
+- Reprodução.
+- Pesquisa genética.
+- Incubação.
+- Arquivo de descobertas.
+- Câmara de nascimento.
+
+Cada jogador terá seus próprios dados e espaços de incubação.
+
+A estrutura física será compartilhada, mas os ovos e as informações individuais serão exibidos conforme o proprietário.
+
+Cada jogador começará com dois espaços de incubação.
+
+# 16. PESQUISA GENÉTICA
+
+A pesquisa genética permitirá investigar:
+- Compatibilidade.
+- Características hereditárias.
+- Elementos.
+- Habilidades.
+- Variações físicas.
+- Potencial genético.
+
+O conhecimento será progressivo.
+
+Algumas características poderão ser previstas no laboratório, enquanto outras só serão confirmadas após o nascimento.
+
+# 17. OVOS E INCUBAÇÃO
+
+Sistema híbrido aprovado.
+
+Cada espécie terá uma identidade visual própria de ovo.
+
+Características hereditárias poderão modificar:
+- Cores.
+- Marcas.
+- Texturas.
+- Cristais.
+- Brilho.
+- Efeitos elementais.
+
+A incubação:
+- Continua offline.
+- É salva individualmente.
+- Não exige presença diária.
+- Não permite perda do ovo por ausência.
+- Permite acompanhamento visual.
+- Possui itens de aceleração opcionais.
+
+Tempos e raridades ainda serão ajustados por testes.
+
+O nascimento terá apresentação visual especial e registro individual.
+
+# 18. EVOLUÇÃO E PROGRESSÃO
+
+A evolução poderá depender de:
+- Nível.
+- Experiência.
+- Itens.
+- Vínculo.
+- Horário.
+- Localização.
+- Missões.
+- Condições específicas.
+
+O jogador terá progressão própria, desbloqueando regiões, atividades, desafios e descobertas.
+
+# 19. MULTIPLAYER
+
+O mundo será compartilhado.
+
+Cada jogador terá:
+- Dados próprios.
+- Criaturas próprias.
+- Equipe própria.
+- Inventário próprio.
+- Reprodução própria.
+- Incubação própria.
+- Progressão própria.
+
+Atividades compartilhadas:
+- Exploração.
+- Eventos.
+- Chefes cooperativos.
+- Encontros sociais.
+- Comércio.
+- Atividades especiais.
+
+O servidor será responsável por validar operações importantes.
+
+# 20. ARQUITETURA TÉCNICA
+
+Tecnologia: Roblox Studio e Luau.
+
+Separação de responsabilidades:
+
+**Servidor**
+- Dados.
+- Captura.
+- Batalhas.
+- Reprodução.
+- Inventário.
+- Evolução.
+- Segurança.
+
+**Cliente**
+- Interface.
+- Câmera.
+- Animações.
+- Efeitos.
+- Controles.
+
+**Compartilhado**
+- Tipos.
+- Configurações.
+- Bancos de dados.
+- Utilitários.
+
+Sistemas principais:
+- PlayerDataService.
+- CreatureService.
+- CompanionService.
+- CaptureService.
+- BattleService.
+- EvolutionService.
+- InventoryService.
+- QuestService.
+- BreedingService.
+- IncubationService.
+
+A arquitetura deverá permitir expansão sem acoplamento desnecessário.
+
+# 21. SALVAMENTO E SEGURANÇA
+
+Utilizar DataStoreService com:
+- Versionamento.
+- Validação de dados.
+- Tratamento de falhas.
+- Tentativas controladas.
+- Proteção contra duplicação.
+- Salvamento consistente.
+
+Modelos 3D não serão utilizados como dados persistentes. Serão salvos identificadores e informações necessárias para reconstruir as criaturas.
+
+# 22. PRIMEIRA VERSÃO JOGÁVEL
+
+A primeira entrega funcional deverá conter:
+
+- Uma Praça Central.
+- Uma região explorável.
+- Três criaturas iniciais.
+- Doze espécies disponíveis como meta de conteúdo.
+- Três linhas de evolução como meta.
+- Dois dispositivos de captura.
+- Enciclopédia.
+- Combate 1 contra 1.
+- Itens básicos.
+- Missões.
+- Um chefe.
+- Companheiro seguidor.
+- Salvamento.
+- Multiplayer funcional.
+
+A meta de doze espécies não significa que todas precisam estar prontas antes do primeiro teste técnico. Começaremos com poucas espécies e expandiremos progressivamente.
+
+# 23. METODOLOGIA DE DESENVOLVIMENTO
+
+Toda implementação seguirá este ciclo:
+
+1. Planejamento do sistema.
+2. Especificação técnica.
+3. Implementação controlada.
+4. Testes no Roblox Studio.
+5. Auditoria.
+6. Correções.
+7. Aprovação.
+8. Versionamento no GitHub.
+
+Nenhum sistema será considerado concluído sem testes reais.
+
+O Claude deverá:
+- Modificar somente o escopo solicitado.
+- Preservar sistemas existentes.
+- Não apagar assets ou scripts sem autorização.
+- Evitar funcionalidades falsas ou incompletas.
+- Informar arquivos criados e modificados.
+- Relatar problemas encontrados.
+- Fornecer instruções de teste.
+
+# 24. ROADMAP OFICIAL
+
+FASE 01 — Documentação e identidade.
+
+FASE 02 — Arquitetura técnica e estrutura do projeto.
+
+FASE 03 — Construção da Praça Central.
+
+FASE 04 — Primeiras criaturas e animações.
+
+FASE 05 — Companheiros seguidores.
+
+FASE 06 — Exploração e captura.
+
+FASE 07 — Enciclopédia e progressão.
+
+FASE 08 — Combate e habilidades.
+
+FASE 09 — Reprodução e genética.
+
+FASE 10 — Primeira região completa.
+
+FASE 11 — Multiplayer avançado.
+
+FASE 12 — Testes, otimização e preparação para lançamento.
+
+---
+
+**REGRA FUNDAMENTAL DO PROJETO**
+
+A qualidade será mais importante que a velocidade.
+
+Nenhum sistema será implementado apenas para parecer funcional. Cada entrega deverá ser testável, consistente, otimizada e preparada para receber novas funcionalidades.
+
+Este documento será a referência central do desenvolvimento. Alterações futuras deverão respeitar as decisões aprovadas ou registrar explicitamente suas revisões.
